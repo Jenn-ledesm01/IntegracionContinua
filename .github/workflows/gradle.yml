@@ -51,10 +51,6 @@ jobs:
     - name: Build with Gradle Wrapper
       run: ./gradlew build
 
-    
-
-    - name: Format Code
-      run: ./gradlew spotlessApply
 
     - name: Run Tests
       run: ./gradlew test
