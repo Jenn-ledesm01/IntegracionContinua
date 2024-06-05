@@ -51,8 +51,7 @@ jobs:
     - name: Build with Gradle Wrapper
       run: ./gradlew build
 
-    - name: Run Checkstyle
-      run: ./gradlew checkstyleMain checkstyleTest
+    
 
     - name: Format Code
       run: ./gradlew spotlessApply
