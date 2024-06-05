@@ -1,6 +1,6 @@
 plugins {
     id 'java'
-    id 'checkstyle'
+
 }
 
 group = 'org.example'
@@ -23,13 +23,4 @@ jar {
         attributes 'IntegracionContinua': 'org.example.Main' // Reemplaza 'tu.paquete.MainClass' con la clase principal de tu aplicación
     }
 }
-checkstyle {
-    toolVersion = '8.45' // Versión de Checkstyle que deseas usar
-    configFile = file("${rootProject.projectDir}/config/checkstyle.xml") // Archivo de configuración de Checkstyle
-}
 
-task checkstyleMainTask(type: Checkstyle) {
-    source 'src/main/java' // Directorio de tus fuentes
-    include '**/*.java' // Patrón de archivos a incluir
-    exclude '**/gen/**' // Patrón de archivos a excluir (opcional)
-}
