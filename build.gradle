@@ -22,3 +22,14 @@ jar {
         attributes 'IntegracionContinua': 'org.example.Main' // Reemplaza 'tu.paquete.MainClass' con la clase principal de tu aplicación
     }
 }
+checkstyle {
+    toolVersion = '8.41' // Puedes especificar la versión de Checkstyle que prefieras
+    configDir = file("${project.rootDir}/config/checkstyle")
+}
+
+tasks.withType(Checkstyle) {
+    reports {
+        xml.required = true
+        html.required = true
+    }
+}
