@@ -51,7 +51,7 @@ jobs:
     - name: Build with Gradle Wrapper
       run: ./gradlew build
 
-    - name: Run Linter
+    - name: Run Checkstyle
       run: ./gradlew checkstyleMain checkstyleTest
 
     - name: Format Code

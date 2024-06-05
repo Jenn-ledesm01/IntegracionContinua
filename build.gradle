@@ -1,5 +1,6 @@
 plugins {
     id 'java'
+    id 'checkstyle'
 }
 
 group = 'org.example'
@@ -23,13 +24,12 @@ jar {
     }
 }
 checkstyle {
-    toolVersion = '8.41' // Puedes especificar la versión de Checkstyle que prefieras
-    configDir = file("${project.rootDir}/config/checkstyle")
+    toolVersion = '8.45' // Versión de Checkstyle que deseas usar
+    configFile = file("${rootProject.projectDir}/config/checkstyle.xml") // Archivo de configuración de Checkstyle
 }
 
-tasks.withType(Checkstyle) {
-    reports {
-        xml.required = true
-        html.required = true
-    }
+task checkstyleMainTask(type: Checkstyle) {
+    source 'src/main/java' // Directorio de tus fuentes
+    include '**/*.java' // Patrón de archivos a incluir
+    exclude '**/gen/**' // Patrón de archivos a excluir (opcional)
 }
