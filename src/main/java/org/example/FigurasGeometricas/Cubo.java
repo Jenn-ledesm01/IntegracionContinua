@@ -1,12 +1,12 @@
 package org.example.FigurasGeometricas;
 
-public class Cuadrado {
+public class Cubo {
 
-    public static Integer area(Integer lado){
+    public static Integer areaUnaCara(Integer lado){
         return lado * lado;
     }
 
-    public static Integer perimetro(Integer lado){
+    public static Integer perimetroUnaCara(Integer lado){
         return 4 * lado;
     }
 
