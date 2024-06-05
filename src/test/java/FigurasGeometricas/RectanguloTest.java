@@ -18,7 +18,7 @@ class RectanguloTest {
         assertEquals(resultado, 14);
     }
     @Test
-    void validarVolumenRectangulo(){
+    void validarVolumenPrisma(){
         int resultado = Rectangulo.volumen(3,4,5);
         assertEquals(resultado,60 );
     }
