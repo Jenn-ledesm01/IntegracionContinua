@@ -1,5 +1,6 @@
 package FigurasGeometricas;
 
+import org.example.FigurasGeometricas.Cuadrado;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;

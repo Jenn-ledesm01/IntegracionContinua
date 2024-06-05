@@ -1,4 +1,4 @@
-package FigurasGeometricas;
+package org.example.FigurasGeometricas;
 
 public class Triangulo {
     public static double area(double base, double altura) { return base * altura / 2; }

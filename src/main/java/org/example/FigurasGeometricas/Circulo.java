@@ -1,4 +1,4 @@
-package FigurasGeometricas;
+package org.example.FigurasGeometricas;
 
 public class Circulo {
     public static double area(double radio) {
