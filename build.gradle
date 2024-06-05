@@ -17,3 +17,8 @@ dependencies {
 test {
     useJUnitPlatform()
 }
+jar {
+    manifest {
+        attributes 'IntegracionContinua': 'org.example.Main' // Reemplaza 'tu.paquete.MainClass' con la clase principal de tu aplicación
+    }
+}
