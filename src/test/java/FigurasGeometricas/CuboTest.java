@@ -10,7 +10,7 @@ class CuboTest {
     @org.junit.jupiter.api.Test
     void validadarAreaCuadrado() {
         int resultado = Cubo.areaUnaCara(4);
-            assertEquals(resultado, 16);
+        assertEquals(resultado, 16);
     }
 
     @Test
@@ -20,7 +20,7 @@ class CuboTest {
     }
 
     @Test
-    void validadarVolumenCuadrado() {
+    void validadarVolumenCubo() {
         int resultado = Cubo.volumen(4);
         assertEquals(resultado, 64);
     }
