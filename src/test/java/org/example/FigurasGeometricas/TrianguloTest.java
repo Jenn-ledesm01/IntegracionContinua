@@ -1,9 +1,10 @@
-package FigurasGeometricas;
-import org.example.FigurasGeometricas.Triangulo;
+package org.example.FigurasGeometricas;
+
 import org.junit.jupiter.api.Test;
+
 import static org.junit.jupiter.api.Assertions.*;
 
-public class TrianguloTest {
+class TrianguloTest {
     @Test
     void validarAreaTriangulo() {
         double resultado = Triangulo.area(4, 5);

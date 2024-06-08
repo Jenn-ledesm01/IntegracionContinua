@@ -1,7 +1,6 @@
 package org.example.FigurasGeometricas;
 
 public class Cubo {
-
     public static Integer areaUnaCara(Integer lado){
         return lado * lado;
     }

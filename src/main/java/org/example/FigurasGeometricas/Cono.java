@@ -1,9 +1,6 @@
 package org.example.FigurasGeometricas;
 
 public class Cono {
-
-    //prueba GithubActions
-
     public static double areaBase(double radio) {
         return Math.PI * radio * radio;
     }
@@ -16,6 +13,3 @@ public class Cono {
         return (1.0 / 3.0) * areaBase(radio) * altura;
     }
 }
-
-
-

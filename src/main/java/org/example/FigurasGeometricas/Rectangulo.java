@@ -1,7 +1,6 @@
 package org.example.FigurasGeometricas;
 
 public class Rectangulo {
-
     public static Integer area(Integer ancho, Integer alto){
         return ancho * alto;
     }

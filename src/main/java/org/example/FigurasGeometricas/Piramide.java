@@ -1,7 +1,6 @@
 package org.example.FigurasGeometricas;
 
 public class Piramide {
-
     public static double areaBase(double lado) {
         return lado * lado;
     }
@@ -14,4 +13,3 @@ public class Piramide {
         return (1.0 / 3.0) * areaBase(lado) * altura;
     }
 }
-

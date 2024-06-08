@@ -1,11 +1,10 @@
-package FigurasGeometricas;
+package org.example.FigurasGeometricas;
 
-import org.example.FigurasGeometricas.Circulo;
 import org.junit.jupiter.api.Test;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 class CirculoTest {
-
     @Test
     void validadarAreaCirculo() {
         double resultado = Circulo.area(4);

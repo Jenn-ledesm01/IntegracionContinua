@@ -1,13 +1,11 @@
-package FigurasGeometricas;
+package org.example.FigurasGeometricas;
 
-import org.example.FigurasGeometricas.Cubo;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 class CuboTest {
-
-    @org.junit.jupiter.api.Test
+    @Test
     void validadarAreaCuadrado() {
         int resultado = Cubo.areaUnaCara(4);
         assertEquals(resultado, 16);

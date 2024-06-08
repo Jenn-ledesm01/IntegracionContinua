@@ -1,11 +1,10 @@
-package FigurasGeometricas;
+package org.example.FigurasGeometricas;
 
-import org.example.FigurasGeometricas.Cono;
-import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.Test;
 
-public class ConoTest {
+import static org.junit.jupiter.api.Assertions.*;
 
+class ConoTest {
     @Test
     public void testAreaBase() {
         double radio = 5.0;

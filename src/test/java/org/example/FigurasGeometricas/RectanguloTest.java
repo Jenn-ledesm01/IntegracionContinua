@@ -1,12 +1,10 @@
-package FigurasGeometricas;
+package org.example.FigurasGeometricas;
 
-import org.example.FigurasGeometricas.Rectangulo;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 class RectanguloTest {
-
     @Test
     void validadrAreaRectangulo(){
         int resultado = Rectangulo.area(3,4);

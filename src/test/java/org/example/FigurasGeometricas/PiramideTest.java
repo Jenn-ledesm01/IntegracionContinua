@@ -1,12 +1,10 @@
-package FigurasGeometricas;
+package org.example.FigurasGeometricas;
 
-import org.example.FigurasGeometricas.Piramide;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 class PiramideTest {
-
     @Test
     void validarAreaBasePiramide() {
         double resultado = Piramide.areaBase(4.0);
