@@ -2,7 +2,6 @@ package org.example.FigurasGeometricas;
 
 public class Cono {
 
-    //test Actions
 
     public static double areaBase(double radio) {
         return Math.PI * radio * radio;
