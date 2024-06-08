@@ -22,7 +22,7 @@ class CirculoTest {
     @Test
     void validadarVolumenEsfera() {
         double resultado = Circulo.volumen(4);
-        double expected = (4/3.0) * Math.PI * Math.pow(4, 3);
+        double expected = (4 / 3.0) * Math.PI * Math.pow(4, 3);
         assertEquals(expected, resultado, 0.0001);
     }
 }

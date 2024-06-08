@@ -9,5 +9,7 @@ public class Cubo {
         return 4 * lado;
     }
 
-    public static Integer volumen(Integer lado){ return lado * lado * lado; }
+    public static Integer volumen(Integer lado){
+        return lado * lado * lado;
+    }
 }
