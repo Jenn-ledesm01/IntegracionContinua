@@ -15,7 +15,7 @@ jobs:
 
     steps:
       - name: Set up JDK 17
-        uses: actions/setup-java@v3
+        uses: actions/setup-java@v2
         with:
           java-version: '17'
           distribution: 'temurin'
@@ -26,7 +26,7 @@ jobs:
       # Configure Gradle for optimal use in GitHub Actions, including caching of downloaded dependencies.
       # See: https://github.com/gradle/actions/blob/main/setup-gradle/README.md
       - name: Setup Gradle
-        uses: gradle/setup-gradle@latest # Update to the latest version
+        uses: gradle/actions/setup-gradle@v3 # Usar la versión más reciente disponible
 
       - name: Cache Gradle packages
         uses: actions/cache@v3 # Usar la versión más reciente disponible
@@ -51,8 +51,7 @@ jobs:
         run: ./gradlew checkstyleMain checkstyleTest
 
       - name: Upload Checkstyle Report
-        uses: actions/upload-artifact@v4 # Update to the latest version
-
+        uses: actions/upload-artifact@v2
         with:
           name: checkstyle-report
           path: build/reports/checkstyle
@@ -69,7 +68,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Set up JDK 17
-        uses: actions/setup-java@v3
+        uses: actions/setup-java@v2
         with:
           java-version: '17'
           distribution: 'temurin'
@@ -77,6 +76,6 @@ jobs:
       # Generates and submits a dependency graph, enabling Dependabot Alerts for all project dependencies.
       # See: https://github.com/gradle/actions/blob/main/dependency-submission/README.md
       - name: Generate and submit dependency graph
-        uses: gradle/dependency-submission@latest # Update to the latest version
+        uses: gradle/actions/dependency-submission@v3 # Usar la versión más reciente disponible
 
 
